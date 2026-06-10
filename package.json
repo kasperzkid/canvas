@@ -21,7 +21,6 @@
     "@nuxt/eslint": "^1.15.2",
     "eslint": "^10.4.1",
     "typescript": "^6.0.3",
-    "vercel": "^41.2.0",
     "vue-tsc": "^3.3.3"
   },
   "packageManager": "pnpm@11.5.2"
