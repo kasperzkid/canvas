@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Space Grotesk', 'Public Sans', sans-serif;
+
+  /* Custom palette as requested */
+  --color-coral: #FF6B6B;
+  --color-electric-blue: #4ECDC4;
+  --color-golden-yellow: #FFE66D;
+  --color-hot-pink: #FF8B94;
+  
+  /* Brand-specific extra weights and colors */
+  --color-brand-dark: #0A0F1D;
+  --color-brand-light: #F8F9FA;
+}
+
+/* Smooth selection colors */
+::selection {
+  background: #FF6B6B;
+  color: #ffffff;
+}
+
+/* Base resets to fit our living artwork style */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #fbfbfc;
+  font-family: 'Space Grotesk', 'Public Sans', sans-serif;
+  overflow-x: hidden;
+  color: #0A0F1D;
+  scroll-behavior: smooth;
+}
+
+/* Beautiful Custom Scrollbar to fit the art gallery feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(78, 205, 196, 0.3);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 107, 0.6);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Utility to hide scrollbars for horizontal scrolling elements on mobile */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
